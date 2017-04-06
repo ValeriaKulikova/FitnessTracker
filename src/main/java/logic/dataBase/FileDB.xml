@@ -1,0 +1,9 @@
+Diet newDiet = new Diet();
+        newDiet.setNameOfDiet(" Diet for a week ");
+        newDiet.setTimeOfDiet(7);
+
+        Product newProduct = new Product();
+        newProduct.setDiet(newDiet);
+        newProduct.setBreakfast("Kefir,fruit,water");
+        newProduct.setDinner("Potato,Chicken,meat,fish,water");
+        newProduct.setSupper("Kefir,fruit,water");

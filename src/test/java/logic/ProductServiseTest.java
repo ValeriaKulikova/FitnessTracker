@@ -26,8 +26,8 @@ public class ProductServiseTest {
     public void testSaveRecord() throws Exception {
         System.out.println("test");
     //      Diet diet = new Diet();
-//        diet.setName_of_diet(" Buckwheat diet ");
-//        diet.setTime_of_diet(7);
+//        diet.setNameOfDiet(" Buckwheat diet ");
+//        diet.setTimeOfDiet(7);
 //
 //        DietService.saveDiet();
 //        System.out.println(user.toString());

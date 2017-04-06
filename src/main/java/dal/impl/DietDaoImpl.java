@@ -12,6 +12,7 @@ import java.util.List;
 
 @Repository
 public class DietDaoImpl implements DietDao {
+
     @Autowired
     private SessionFactory sessionFactory;
 

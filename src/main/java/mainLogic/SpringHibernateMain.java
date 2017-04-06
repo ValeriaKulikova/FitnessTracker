@@ -17,8 +17,8 @@ public class SpringHibernateMain {
         ProductDao productDao =context.getBean(ProductDao.class);
 
         Diet newDiet = new Diet();
-        newDiet.setName_of_diet(" Diet for a week ");
-        newDiet.setTime_of_diet(7);
+        newDiet.setNameOfDiet(" Diet for a week ");
+        newDiet.setTimeOfDiet(7);
 
         Product newProduct = new Product();
         newProduct.setDiet(newDiet);
