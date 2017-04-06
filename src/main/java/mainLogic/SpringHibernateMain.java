@@ -26,8 +26,9 @@ public class SpringHibernateMain {
         newProduct.setDinner("Potato,Chicken,meat,fish,water");
         newProduct.setSupper("Kefir,fruit,water");
 
-        DietDao.save(newDiet);
-        ProductDao.save(newProduct);
+
+        dietDao.save(newDiet);
+        productDao.save(newProduct);
 
         System.out.println("Diet::" + newDiet.toString());
         List<Diet> dietList = dietDao.findAll();
