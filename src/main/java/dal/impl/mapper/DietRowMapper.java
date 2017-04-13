@@ -13,7 +13,7 @@ public class DietRowMapper extends BeanPropertyRowMapper<Diet> {
         Diet diet=new Diet();
         diet.setId(rs.getLong("ID"));
         diet.setNameOfDiet(rs.getString("NAME_OF_DIET"));
-        diet.getTimeOfDiet(rs.getInt("TIME_OF_DIET"));
+        diet.setTimeOfDiet(rs.getInt("TIME_OF_DIET"));
 
         return diet;
 

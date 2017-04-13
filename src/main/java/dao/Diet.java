@@ -48,7 +48,7 @@ public class Diet  {
 
 
   @Column(name = "Time_of_diet", nullable = false)
-    public int getTimeOfDiet(int time_of_diet) {
+    public int getTimeOfDiet() {
         return timeOfDiet;
     }
 
@@ -79,11 +79,6 @@ public class Diet  {
                 .toString();
     }
 
-
-    public void getTimeOfDiet() {
-
-
-    }
 
 
 }
