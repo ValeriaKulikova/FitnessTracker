@@ -26,7 +26,7 @@ public class DbTableCreator {
             sql = "CREATE TABLE IF NOT EXISTS JAVA_TASK.DIET "
                     + " ( "
                     + " ID                      SERIAL PRIMARY KEY     NOT NULL, "
-                    + " NAME_OF_DIET            CHAR(32)            NOT NULL, "
+                    + " NAME_OF_DIET            VARCHAR(32)            NOT NULL, "
                     + " TIME_OF_DIET                    INT            NOT NULL  "
                     + " ) ";
             stmt.executeUpdate(sql);
@@ -35,9 +35,9 @@ public class DbTableCreator {
                     + " ( "
                     + " ID                      SERIAL PRIMARY KEY     NOT NULL, "
                     + " DIET_ID                 INT                 NOT NULL, "
-                    + " BREAKFAST               CHAR(100)           NOT NULL, "
-                    + " DINNER                  CHAR(500)           NOT NULL , "
-                    + " SUPPER                  CHAR(500)           NOT NULL  "
+                    + " BREAKFAST               VARCHAR(100)           NOT NULL, "
+                    + " DINNER                  VARCHAR(500)           NOT NULL , "
+                    + " SUPPER                  VARCHAR (500)           NOT NULL  "
                     + " ) ";
             stmt.executeUpdate(sql);
 

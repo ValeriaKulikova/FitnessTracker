@@ -1,6 +1,7 @@
 package dao;
 
 import org.apache.commons.lang3.builder.ToStringBuilder;
+import org.omg.CORBA.Object;
 
 import javax.persistence.*;
 import java.util.Set;
@@ -8,11 +9,14 @@ import java.util.Set;
 
 @Entity
 @Table (name = "DIET", schema = "JAVA_TASK")
-public class Diet {
+public class Diet  {
     private Long id;
     private String nameOfDiet;
     private int timeOfDiet;
     private Set<Product> products = null;//new HashSet<Post>(0);
+    private Long dietId;
+    private Long productId;
+
 
     public Diet() {
 
@@ -45,7 +49,7 @@ public class Diet {
 
 
   @Column(name = "Time_of_diet", nullable = false)
-    public int getTimeOfDiet() {
+    public int getTimeOfDiet(int time_of_diet) {
         return timeOfDiet;
     }
 
@@ -74,5 +78,15 @@ public class Diet {
                 .append("timeOfDiet", timeOfDiet)
                 .append("products", products)
                 .toString();
+    }
+
+
+    public void getTimeOfDiet() {
+
+
+    }
+
+    public Long getDietId() {
+        return dietId;
     }
 }
