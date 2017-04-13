@@ -16,6 +16,7 @@ public class Product {
     private String breakfast;
     private String dinner;
     private String supper;
+    private long dietId;
 
     public Product() {
 
@@ -61,5 +62,9 @@ public Product (long id, Diet diet, String breakfast, String dinner,String suppe
                 .append("dinner", dinner)
                 .append("supper", supper)
                 .toString();
+    }
+
+    public void setDietId(long dietId) {
+        this.dietId = dietId;
     }
 }
