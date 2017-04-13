@@ -41,6 +41,12 @@ public class DbTableCreator {
                     + " ) ";
             stmt.executeUpdate(sql);
 
+            sql= "ALTER TABLE JAVA_TASK.PRODUCT"
+                    + " ADD CONSTRAINT FK_DIET "
+                    + " FOREIGN KEY (DIET_ID) REFERENCES JAVA_TASK.DIET (ID) MATCH FULL "
+                    + " ";
+            stmt.executeUpdate(sql);
+
 
             stmt.close();
             c.close();

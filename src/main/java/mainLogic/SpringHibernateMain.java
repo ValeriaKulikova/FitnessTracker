@@ -23,7 +23,7 @@ public class SpringHibernateMain {
         ProductDao productDao =context.getBean(ProductDao.class);
 
         //        putNewRecordsToDataBase(dietDao, productDao);
-
+//
 
 //        Minimum functionality
 
@@ -61,12 +61,12 @@ public class SpringHibernateMain {
         List<Diet> dietsByTime = showDietsForTime(dietDao, 7);
 
         System.out.println("Question2!!!!!!!!!");
-        
+
         for (Diet dieta : dietsByTime) {
             System.out.println("diet(dietsForTime=" + dieta + ") ");
         }
 
-        
+
          context.close();
     }
 

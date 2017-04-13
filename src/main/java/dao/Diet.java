@@ -14,8 +14,7 @@ public class Diet  {
     private String nameOfDiet;
     private int timeOfDiet;
     private Set<Product> products = null;//new HashSet<Post>(0);
-    private Long dietId;
-    private Long productId;
+
 
 
     public Diet() {
@@ -86,7 +85,5 @@ public class Diet  {
 
     }
 
-    public Long getDietId() {
-        return dietId;
-    }
+
 }
